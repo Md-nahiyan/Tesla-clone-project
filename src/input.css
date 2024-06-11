@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+html {
+    font-size: 62.5%;
+    font-family: 'Montserrat' sans-serif;
+}
+
+@layer components{
+    .nav-bar{
+        @apply hidden
+    }
+    .nav-link{
+        @apply text-[1.5rem] px-4 py-3 font-semibold text-w  bg-slate-600 bg-transparent hover:bg-slate-400 hover:bg-opacity-20 rounded-[1.5rem]
+        duration-500;
+    }
+    .nav-icon{
+        @apply text-[4rem] inline-block px-3 py-3  font-semibold text-slate-800  bg-slate-600 bg-transparent hover:bg-slate-400 hover:bg-opacity-20 rounded-[0.5rem]
+        duration-500;
+    }
+    .car-section{
+        @apply w-full h-screen relative;
+    }
+    .car-img{
+      @apply w-full h-full object-cover;
+    }
+    .car-btm{
+        @apply absolute top-[23%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center
+    }
+    .car-btn{
+        @apply absolute bottom-[15%] left-[50%] translate-x-[-50%] translate-y-[-50%] text-center 
+    }
+    .btn{
+        @apply px-37 py-5 bg-slate-200 rounded-[0.5rem] text-2xl font-medium mr-7;
+    }
+   .btn-1{
+    @apply bg-slate-500 text-white
+   }
+   
+   .footer-area{
+    @apply w-full h-screen relative ;
+   }
+
+   .footer-heading{
+    @apply top-[20%] left-[50%]
+   }
+}
